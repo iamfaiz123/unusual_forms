@@ -35,6 +35,24 @@ this project relies on:
 - [Tokio] - Rust library for async functionality  
 - [git] - for version controls
 
+## Defined routes(Api end points)
+"<hostaddress>/post"
+* Accept Post requests with Json body to add new thread
+
+"<hostaddress>//thread/read/{threadname}"
+* Accept get requests with threadname as dynamic path
+
+"<hostaddress>//thread/update/{threadname}"
+* Accept Patch method and and a json body to update thread content, will return custom error if you're not the owner of thread. ie, your ip dosent match the ip associated with the thread
+  
+  
+"/thread/delete/{threadname}"
+* Accept patch method and delete the thread, only owner of the user can access this api
+
+
+"<hostaddress>/search"
+* Accept get requests with a tital of thread as form data , if found returns thread else custom not found message 
+
 
 ## Installation
 
