@@ -1,5 +1,5 @@
 port: 3000
-host: "127.0.0.1"
+host: "0.0.0.0"
 dataBaseSetting :
-    url: <your own api key>
+    url: "mongodb+srv://faizal:123@cluster0.sh3np.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
     name : "Faizal"
